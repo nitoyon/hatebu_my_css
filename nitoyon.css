@@ -1,0 +1,522 @@
+/*******************************************************************************
+ *              clear default css
+ *******************************************************************************/
+
+/** system clear **/
+
+#user-header{
+	background: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+}
+
+#hatena-body{
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+#hatena-body img.private-profile-image,
+#hatena-body img.profile-image{
+	margin: 0;
+}
+
+div.curvebox-lb-bottom,
+div.curvebox-lb-header,
+div.curvebox-color-bottom,
+div.curvebox-color-header,
+div.curvebox-gray-bottom,
+div.curvebox-gray-header,
+div.curvebox-bottom,
+div.curvebox-header{
+	background: none;
+	position: static;
+}
+
+div.curvebox-lb-body,
+div.curvebox-color-body,
+div.curvebox-gray-body,
+div.curvebox-body{
+	border: none;
+}
+
+/*******************************************************************************
+ *              common
+ *******************************************************************************/
+body{
+	background-color: #f0f0f0;
+}
+
+#hatena-body a:hover,
+#user-header a:hover{
+	background: url('http://img.f.hatena.ne.jp/images/fotolife/n/nitoyon/20090215/20090215022007_original.gif');
+}
+
+.hatena-star-add-button-image {
+	background-image: url('http://img.f.hatena.ne.jp/images/fotolife/n/nitoyon/20090215/20090215221656.png');
+}
+
+/*******************************************************************************
+ *              main
+ *******************************************************************************/
+div#header{
+	background: #cccccc !important;
+	border-bottom: 1px solid #aaaaaa !important;
+}
+
+div#hatena-body {
+}
+
+#hatena-body div.main {
+	margin-left: 150px;
+	padding: 0;
+	float: left;
+	width: 450px;
+  background-color: transparent;
+  background-image: url('http://img.f.hatena.ne.jp/images/fotolife/n/nitoyon/20090215/20090215022008_original.png');
+}
+
+
+/*******************************************************************************
+ *              header
+ *******************************************************************************/
+div#user-header{
+	position: absolute;
+	right: 0;
+}
+
+div#user-header h2{
+}
+
+div#user-header h2 a.profile-icon{
+	position: absolute;
+	left: -32px;
+}
+
+div#user-search-area{
+	position: static;
+}
+
+div.user-search{
+	margin: 10px 0 0 0;
+}
+
+div.breadcrumbs{
+	display: none;
+}
+
+ul.menu{
+	margin: 1em 0 0 0;
+}
+
+ul.menu li,
+ul.menu li.current-menu{
+	background: none;
+	float: none;
+	margin: 0;
+	padding: 0 0 0 24px;;
+	border: 0;
+}
+
+ul.menu li a{
+	background: none;
+	display: list-item;
+	padding: 0;
+}
+
+ul.menu li.current-menu a{
+	font-weight: normal;
+}
+
+#hatena-body div.main div.pager{
+	display: none;
+}
+
+#hatena-body div.main div.pager.pager-autopagerize{
+	display: block;
+}
+
+#hatena-body div.main ul.threshold{
+	margin: 1em 1em 5em 0;
+	float:right;
+	font-size: 80%;
+}
+
+#hatena-body div.main ul.threshold li.selected{
+	background: #eee;
+}
+
+#hatena-body div.main ul.threshold li.selected a,
+#hatena-body div.main ul.threshold li.selected a:hover
+{
+	background: none;
+}
+
+#hatena-body div.main ul.threshold li a{
+	font-weight: normal;
+	color: #666;
+	margin: 0 5px;
+	height: auto;
+}
+
+#hatena-body div.main ul.threshold li a:hover{
+	background: url('http://img.f.hatena.ne.jp/images/fotolife/n/nitoyon/20090215/20090215022007_original.gif');
+}
+
+/*******************************************************************************
+ *              sidebar
+ *******************************************************************************/
+div.sidebar{
+	float: right;
+	margin: 0;
+	top: 250px;
+	left: 0px;
+	width: 180px;
+}
+
+div.sidebar div.hatena-module,
+div.sidebar div.hatena-module-title,
+div.sidebar div.hatena-module-body{
+	background: none !important;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.sidebar div.hatena-module{
+	margin-bottom: 2em;
+}
+
+#hatena-body div.sidebar div.hatena-module-title,
+#hatena-body div.sidebar div.hatena-module-title h3{
+	color: #000000;
+	padding: 0;
+	font-weight: normal;
+}
+
+#icon-list-setting, #tag-cloud-setting{
+	margin: 0;
+}
+
+/*** profile ***/
+div.hatena-module-profile ul li.following a.add-favorite img{
+	display: inline;
+	visibility: hidden;
+}
+
+div#hatena-body div.hatena-module-profile ul li.following a.add-favorite,
+div#hatena-body div.hatena-module-profile ul li.following a.add-favorite:hover{
+	display: block;
+	width: 160px;
+	height: 27px;
+	background: url('http://img.f.hatena.ne.jp/images/fotolife/n/nitoyon/20070125/20070125085244.gif') no-repeat;
+}
+
+div.hatena-module-profile ul li.followers{
+	display: none;
+}
+
+div.hatena-module-profile ul li span.label{
+	font-weight: normal;
+	color: #666666;
+}
+
+div.hatena-module-profile ul li a img{
+	display: none;
+}
+
+/*** favorite ***/
+div.hatena-module-profile ul.sidebar-users li a img{
+	display: inline;
+}
+
+div.hatena-module-favoritelist a img{
+	width: 16px;
+	height: 16px;
+	border: 2px solid transparent;
+}
+
+/*** tags ***/
+div.hatena-module-tags ul#tags li a.tag{
+	color: #99AA99
+}
+
+/*** tag-list (no tag-cloud class) ***/
+ul#tags li{
+	text-align: right;
+	clear: both;
+}
+
+ul#tags li a.tag{
+	float: left;
+}
+
+ul li.tag-cloud-size-0 a { font-size: 80%; }
+ul li.tag-cloud-size-1 a { font-size: 80%; }
+ul li.tag-cloud-size-2 a { font-size: 90%; }
+ul li.tag-cloud-size-3 a { font-size: 90%; }
+ul li.tag-cloud-size-4 a { font-size: 100%; }
+ul li.tag-cloud-size-5 a { font-size: 100%; }
+ul li.tag-cloud-size-6 a { font-size:110%; }
+ul li.tag-cloud-size-7 a { font-size: 120%; }
+ul li.tag-cloud-size-8 a { font-size: 130%; }
+ul li.tag-cloud-size-9 a { font-size: 140%; }
+ul li.tag-cloud-size-10 a { font-size: 150%; }
+
+/*** tag-cloud ***/
+ul#tags.tag-cloud li{
+	text-align: left;
+}
+
+ul#tags.tag-cloud li a.tag{
+	float: none;
+}
+
+/*** group ***/
+ul.group-list li a.group-link{
+	background: none;
+}
+
+ul.group-list li.selected a{
+	color: #000000;
+	font-weight: normal;
+}
+
+/*******************************************************************************
+ *              bookmark
+ *******************************************************************************/
+ul#bookmarked_user li{
+	background: url('http://img.f.hatena.ne.jp/images/fotolife/n/nitoyon/20090215/20090215022011_original.png') top left no-repeat;
+	margin: 0 0 4em 0;
+}
+
+ul#bookmarked_user ul li{
+	background: none;
+	margin: 0;
+}
+
+
+/*******************************************************************************
+ *              bookmark title
+ *******************************************************************************/
+ul#bookmarked_user{
+	margin: 0;
+	padding: 0;
+}
+
+ul#bookmarked_user li h3{
+	position: relative;
+	background-position: 6px 6px;
+	padding: 0 0 0 28px;
+	font-family: Georgia, Constantia, Hoefler Text, serif; 
+	letter-spacing: .1em;
+	margin: 0 0 10px 0;
+	font-size: 180%;
+}
+
+ul#bookmarked_user li h3 img{
+	display: none; /* disable camera.gif */
+}
+
+/*** page title ***/
+ul#bookmarked_user li h3 a{
+	display: block;
+	padding: 40px .5em 10px;
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+}
+
+ul#bookmarked_user li h3 a:visited{
+	color: #000000;
+	background: url('http://img.f.hatena.ne.jp/images/fotolife/n/nitoyon/20090215/20090215022009_original.png');
+}
+
+/*** page domain ***/
+ul#bookmarked_user li h3 a.domain,
+ul#bookmarked_user li h3.current-element a.domain{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 450px;
+	padding: 4px 10px 4px 0;
+	border: none;
+	color: #808080;
+	text-align: right;
+	letter-spacing: 0;
+	font-style: italic;
+	font-size: 50%;
+}
+
+ul#bookmarked_user li h3.current-element a.domain{
+	background: none;
+}
+
+/*** hover ***/
+ul#bookmarked_user li h3.current-element a,
+ul#bookmarked_user li h3 a:hover
+{
+	color: #000000;
+	background-image: url('http://img.f.hatena.ne.jp/images/fotolife/n/nitoyon/20090215/20090215022007_original.gif');
+	background-repeat: no-repeat;
+}
+
+ul#bookmarked_user li h3 a.domain:hover{
+	background: none;
+	color: #000000;
+}
+
+
+/*******************************************************************************
+ *              bookmark info
+ *******************************************************************************/
+ul#bookmarked_user li ul{
+	margin-left: 40px;
+	float: left;
+}
+
+ul#bookmarked_user li ul.comment{
+	float: none;
+	margin-left: 0;
+}
+
+ul#bookmarked_user li ul li.category{
+	display: none;
+}
+
+/*** users ***/
+ul#bookmarked_user li ul li.users{
+	position: relative;
+	display: block;
+	width: 46px;
+	height: 46px;
+}
+
+ul#bookmarked_user li ul li.users a{
+	text-align: center;
+	display: block;
+	padding: 0;
+	width: 32px;
+	height: 32px;
+}
+
+ul#bookmarked_user li ul li.users strong,
+ul#bookmarked_user li ul li.users em,
+ul#bookmarked_user li ul li.users a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	padding: 7px;
+	width: 32px;
+	height: 32px;
+}
+
+ul#bookmarked_user li ul li.users strong a,
+ul#bookmarked_user li ul li.users em a{
+	position: static;
+	padding: 0;
+}
+
+ul#bookmarked_user li ul li.users strong{
+	background-color: #ffcccc;
+}
+ul#bookmarked_user li ul li.users em{
+	background-color: #FFF0F0;
+}
+
+/*** add bookmark ***/
+ul#bookmarked_user li ul li.addbookmark{
+}
+
+ul#bookmarked_user li ul li.addbookmark a{
+	background: url('http://img.f.hatena.ne.jp/images/fotolife/n/nitoyon/20090215/20090215022010.png') 0 0 no-repeat;
+	display: block;
+	margin: 5px 0 0 0;
+	width: 46px;
+	height: 16px;
+}
+
+ul#bookmarked_user li ul li.addbookmark a img{
+	visibility: hidden;
+}
+
+/*******************************************************************************
+ *              bookmark comment
+ *******************************************************************************/
+
+ul#bookmarked_user div.comment{
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*** thumbnail ***/
+ul#bookmarked_user div.comment span.thumbnail{
+	float: none;
+	display: block;
+	text-align: center;
+	padding: 0 0 10px 0;
+}
+
+ul#bookmarked_user div.comment span.thumbnail a img.youtube,
+ul#bookmarked_user div.comment span.thumbnail a img.nicovideo{
+	width: 320px;
+	height: 240px;
+	padding: 10px;
+}
+
+ul#bookmarked_user div.comment span.thumbnail a:hover img.youtube,
+ul#bookmarked_user div.comment span.thumbnail a:hover img.nicovideo{
+	background: url('http://img.f.hatena.ne.jp/images/fotolife/n/nitoyon/20090215/20090215022007_original.gif');
+}
+
+/*** comment ***/
+ul#bookmarked_user div.comment ul.comment{
+}
+
+ul#bookmarked_user div.comment ul.comment li{
+	padding: 0 0 .8em 1em;
+	background: white;
+}
+
+ul#bookmarked_user div.comment ul.comment li a.username{
+	color: black;
+	text-decoration: none;
+}
+
+ul#bookmarked_user div.comment ul.comment li.mine a.username{
+	font-weight: normal;
+}
+
+#hatena-body ul#bookmarked_user div.comment ul.comment li span.tags{
+	padding-left: 5px;
+}
+
+#hatena-body ul#bookmarked_user div.comment ul.comment li span.tags a.user-tag{
+	color: #99aa99;
+}
+
+ul#bookmarked_user div.comment ul.comment li span.comment{
+	display: block;
+	color: #666666;
+	padding-left: 20px;
+}
+
+ul#bookmarked_user div.comment ul.comment li span.timestamp{
+	padding-left: 20px;
+	color: #aaaaaa;
+}
+
+#bookmarked_user div.curvebox-bottom{
+	background: none;
+	display: block;
+	clear: both;
+}
+
+
+/*******************************************************************************
+ *              end
+ *******************************************************************************/
