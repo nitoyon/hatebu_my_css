@@ -54,16 +54,12 @@ body{
 }
 
 .hatena-star-add-button-image {
-	background-image: url('http://img.f.hatena.ne.jp/images/fotolife/n/nitoyon/20090215/20090215221656.png');
+	background-image: url('http://img.f.hatena.ne.jp/images/fotolife/n/nitoyon/20090215/20090215232021.png');
 }
 
 /*******************************************************************************
  *              main
  *******************************************************************************/
-div#header{
-	background: #cccccc !important;
-	border-bottom: 1px solid #aaaaaa !important;
-}
 
 div#hatena-body {
 }
@@ -322,7 +318,7 @@ ul#bookmarked_user li h3 img{
 /*** page title ***/
 ul#bookmarked_user li h3 a{
 	display: block;
-	padding: 40px .5em 10px;
+	padding: 30px .5em 15px;
 	text-align: center;
 	text-decoration: none;
 	color: #000000;
